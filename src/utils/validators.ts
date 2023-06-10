@@ -25,7 +25,7 @@ export const passwordValidator = (password: string): string[] | undefined => {
   const validation = [
     { key: /\d+/g, msg: 'Passordet må inneholde minst et tall' },
     { key: /[a-zæøå]/g, msg: 'Passordet må inneholde små bokstaver' },
-    { key: /[A-ZÆØÅ]/g, msg: 'Passordet må inneholde store bokstaver*' },
+    { key: /[A-ZÆØÅ]/g, msg: 'Passordet må inneholde store bokstaver' },
     {
       key: /[!-/:-@[-`{-~]/g,
       msg: 'Passordet må inneholde minst et spesial tegn',
